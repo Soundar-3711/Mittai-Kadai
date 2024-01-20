@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import AppBar from './Components/AppBar.js';
+import Banner from './Components/Banner.js';
+import Comments from './Components/Comments.js';
+import Menu from './Components/Menu.js';
+import PickoftheWeek from './Components/PickoftheWeek.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppBar />
+      <Banner />
+      <Menu />
+      <PickoftheWeek />
+      <Comments />
+      <div className="text-center my-3 text-success small">
+        Copyright © 2024
+      </div>
+    </>
   );
 }
 
